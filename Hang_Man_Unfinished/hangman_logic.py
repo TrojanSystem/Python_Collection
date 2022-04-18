@@ -4,7 +4,7 @@ import random
 selectedWord = ' '
 listOfWords = ['Mouse', 'Cat', 'Dog', 'BeeKeeper', 'Python', 'Java', 'StackOverFlow', 'GitHub']
 dashedList = []
-hangman = [h, a, n, g, m, aa, nn, ss]
+hangman = [ss, nn, aa, m, g, n, a, h]
 
 randomNumbers = random.randint(0, len(listOfWords) - 1)
 end = False
