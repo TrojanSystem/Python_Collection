@@ -4,6 +4,7 @@ begin_fill()
 left(36)
 while True:
     forward(200)
+
     left(144)
     print(pos())
 
