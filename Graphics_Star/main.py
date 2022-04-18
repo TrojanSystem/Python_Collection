@@ -1,4 +1,5 @@
 from turtle import *
+
 color('red', 'yellow')
 begin_fill()
 left(36)
@@ -6,7 +7,6 @@ while True:
     forward(200)
 
     left(144)
-
 
     if abs(pos()) < 1:
         break
