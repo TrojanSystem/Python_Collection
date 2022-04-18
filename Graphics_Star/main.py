@@ -6,23 +6,23 @@ while True:
     forward(200)
 
     left(144)
-    print(pos())
+
 
     if abs(pos()) < 1:
         break
 
 left(-36)
 forward(162)
-print(pos())
+
 left(90)
 forward(190)
-print(pos())
+
 left(90)
 forward(200)
-print(pos())
+
 left(90)
 forward(190)
-print(pos())
+
 left(90)
 home()
 
