@@ -4,7 +4,7 @@ from turtle import Turtle
 
 y = 0
 speed('fastest')
-whichOne = input('Which one \n dot_circle \n random_lines \n spirograph \n different_shape \n star: \n')
+whichOne = input('Which one \n dot_circle \n random_lines \n spirograph \n different_shape \n cross \n star: \n')
 if whichOne == 'random_lines':
     random_lines()
 elif whichOne == 'dot_circle':
@@ -13,6 +13,8 @@ elif whichOne == 'star':
     star()
 elif whichOne == 'dashed_line':
     dashed_line()
+elif whichOne == 'cross':
+    cross()
 elif whichOne == 'spirograph':
     # Loop for Spirograph
     for z in range(360):

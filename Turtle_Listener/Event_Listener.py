@@ -9,7 +9,6 @@ t.setposition(0, 0)
 
 def left_move():
     left(90)
-    forward(20)
 
 
 def forward_move():
@@ -22,7 +21,6 @@ def backward_move():
 
 def right_move():
     right(90)
-    forward(20)
 
 
 def random_circle():

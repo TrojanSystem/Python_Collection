@@ -5,6 +5,20 @@ hideturtle()
 colormode(255)
 
 
+def cross():
+    shape('turtle')
+
+    circle(50, 360, 3)
+    setheading(180)
+    circle(50, 360, 3)
+    setheading(90)
+    circle(50, 360, 3)
+    setheading(270)
+    circle(50, 360, 3)
+    pensize(5)
+    forward(250)
+
+
 def star():
     colors = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
     color(colors)
