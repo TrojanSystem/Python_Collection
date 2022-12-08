@@ -1,5 +1,5 @@
 print('Which Program U want to Run')
-which = input('Type "Tip", "Digit", "Age", "BMI" program: ')
+which = input('Type "Tip", "Digit", "Age", "BMI","Leap" program: ')
 
 if which == "Tip":
     # TIP CALCULATOR
@@ -59,21 +59,34 @@ elif which == "BMI":
     height = input('Enter your height in m: ')
     bmi = float(weight) / (float(height) ** 2)
     if bmi < 18.5:
-        print(f'BMI:{round(bmi,2)}  Under-Weight')
+        print(f'BMI:{round(bmi, 2)}  Under-Weight')
     elif 18.5 <= bmi < 25:
-        print(f'BMI:{round(bmi,2)}  Normal-Weight')
+        print(f'BMI:{round(bmi, 2)}  Normal-Weight')
     elif 25 <= bmi < 30:
-        print(f'BMI:{round(bmi,2)}  Over-Weight')
+        print(f'BMI:{round(bmi, 2)}  Over-Weight')
     elif 30 <= bmi < 35:
-        print(f'BMI:{round(bmi,2)}  Obese')
+        print(f'BMI:{round(bmi, 2)}  Obese')
     elif bmi >= 35:
-        print(f'BMI:{round(bmi,2)}  Clinical Obese')
+        print(f'BMI:{round(bmi, 2)}  Clinical Obese')
     else:
         print('Unknown')
 
+elif which == "Leap":
+    print('Welcome to leap year calculator')
+    year = input('Enter year: ')
+    if float(year) % 4 == 0:
+        if float(year) % 100 == 0:
+            if float(year) % 400 == 0:
+                print('Leap Year')
+            else:
+                print('Not Leap Year')
+        else:
+            print('Leap Year')
+    else:
+        print('Not Leap Year')
 
 else:
-    print('Unknown Program')
+    print('Not Leap Year')
 
 # print('Welcome to Tip Calculator!')
 
