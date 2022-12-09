@@ -16,10 +16,11 @@ class UptoDay8:
             print(f"Total Even {totalEven} : Total Odd {totalOdd}")
         elif which == 'FizzBuzz':
             for evens in range(1, 101):
-                if evens % 3 == 0:
-                    print('Fizz')
-
+                if evens % 3 == 0 and evens % 5 == 0:
+                    print('FizzBuzz')
                 elif evens % 5 == 0:
                     print('Buzz')
+                elif evens % 3 == 0:
+                    print('Fizz')
                 else:
                     print(evens)
