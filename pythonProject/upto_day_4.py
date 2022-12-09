@@ -94,7 +94,7 @@ class UptoDay4:
             print('Welcome to Who pays ')
             who = input('Give me everybody\'s name? comma separated: ')
             whoPays = who.split(',')
-            randomPay = random.randint(0, len(whoPays))
+            randomPay = random.randint(0, len(whoPays)-1)
             print(f'{whoPays[randomPay]} card pulled out!!')
         else:
             exit()
