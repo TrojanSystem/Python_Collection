@@ -1,4 +1,5 @@
 import random
+import hangman
 
 
 class UptoDay8:
@@ -7,7 +8,7 @@ class UptoDay8:
         totalEven = 0
         totalOdd = 0
         print('Which Program U want to Run')
-        which = input('Type "EvenOdd", "FizzBuzz","Password" program: ')
+        which = input('Type "EvenOdd", "FizzBuzz","Password","Hangman" program: ')
         if which == 'EvenOdd':
             for evens in range(1, 101):
                 if evens % 2 == 0:
@@ -39,17 +40,16 @@ class UptoDay8:
             password = []
 
             for number in range(0, passNumber):
-
                 password.append(random.choice(numbers))
             for number in range(0, passLetters):
-
                 password.append(random.choice(letters))
             for number in range(0, passSymbols):
-
                 password.append(random.choice(symbols))
             random.shuffle(password)
-            generatedPassword=""
+            generatedPassword = ""
             for passw in password:
                 generatedPassword += passw
 
             print(f'Password Generated: {generatedPassword}')
+        elif which == 'Hangman':
+            hangman.Hangman.hangman_game()
