@@ -1,28 +1,15 @@
-# import math
-#
-# print('Welcome to Area calculator')
-#
-#
-# def area(radius):
-#     circle_area = math.pi * radius ** 2
-#     return print(f'Area of circle is {round(circle_area, 2)}')
-#
-#
-# radi = float(input('Enter circle radius: '))
-# area(radius=radi)
-#
-#
-# def bmi_index(height, weight):
-#     bmi = weight / height ** 2
-#     return round(bmi, 2)
-#
-#
-# print(f"BMI value {bmi_index(1.65, 85)}")
-#
-# def prime_checker():
-#     x=1
-#     for x in range(0,101):
-#         if x
+def prime_checker():
+    length = 0
+    for x in range(1, 101):
+        for y in range(1, 101):
+            if x % y == 0:
+                length += 1
+        if length > 2:
+            print(f'{x} Not Prime')
+            length = 0
+        elif length <= 2:
+            print(f'{x} Prime')
+            length = 0
 
 
 def calculation(first, second, operation):
