@@ -10,7 +10,7 @@ class UptoDay8:
         totalEven = 0
         totalOdd = 0
         print('Which Program U want to Run')
-        which = input('Type "EvenOdd", "FizzBuzz","Password","Hangman","Calculator","PrimeChecker" program: ')
+        which = input('Type "EvenOdd", "FizzBuzz","Password","Hangman","Calculator","PrimeChecker","Cipher" program: ')
         if which == 'EvenOdd':
             for evens in range(1, 101):
                 if evens % 2 == 0:
@@ -59,3 +59,5 @@ class UptoDay8:
             day_8.calculator()
         elif which == "PrimeChecker":
             day_8.prime_checker()
+        elif which == "Cipher":
+            day_8.encryption()
