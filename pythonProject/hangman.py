@@ -1,16 +1,16 @@
 import random
 
 hangman_list = [
-        ''' ---------------|
-                           |
-                           |
-                           |
-                           |
-                           |
-                           |
-                  ============''',
+    ''' ---------------|
+                   |
+                   |
+                   |
+                   |
+                   |
+                   |
+          ============''',
 
-        ''' --------|------|
+    ''' --------|------|
                     |      |
                     0      |
                            |
@@ -18,7 +18,7 @@ hangman_list = [
                            |
                            |
                    ============''',
-        ''' --------|------|
+    ''' --------|------|
                     |      |
                     0      |
                    /|\     |
@@ -26,7 +26,7 @@ hangman_list = [
                            |
                            |
                    ============''',
-        ''' --------|------|
+    ''' --------|------|
                     |      |
                     0      |
                    /|\     |
@@ -34,7 +34,7 @@ hangman_list = [
                    /       |
                            |
                    ============''',
-        ''' --------|------|
+    ''' --------|------|
                     |      |
                     0      |
                    /|\     |
@@ -42,8 +42,9 @@ hangman_list = [
                    / \     |
                            |
                   ============''']
-class Hangman:
 
+
+class Hangman:
 
     @staticmethod
     def hangman_game():
@@ -71,7 +72,7 @@ class Hangman:
                     #
                     # for add in numList:
                     #     guessedWord.insert(add, guess)
-                    # print(f'You r correct letter "{spell}" is in the chosen word')
+                    # print(f'You are correct letter "{spell}" is in the chosen word')
                     # if x == len(choosed_word):
                     #     break
             if guess not in choosed_word:

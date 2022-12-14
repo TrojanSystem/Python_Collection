@@ -1,4 +1,6 @@
 import random
+
+import day_8
 import hangman
 
 
@@ -8,7 +10,7 @@ class UptoDay8:
         totalEven = 0
         totalOdd = 0
         print('Which Program U want to Run')
-        which = input('Type "EvenOdd", "FizzBuzz","Password","Hangman" program: ')
+        which = input('Type "EvenOdd", "FizzBuzz","Password","Hangman","Calculator" program: ')
         if which == 'EvenOdd':
             for evens in range(1, 101):
                 if evens % 2 == 0:
@@ -53,3 +55,5 @@ class UptoDay8:
             print(f'Password Generated: {generatedPassword}')
         elif which == 'Hangman':
             hangman.Hangman.hangman_game()
+        elif which == 'Calculator':
+            day_8.calculator()
