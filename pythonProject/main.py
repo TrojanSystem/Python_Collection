@@ -24,7 +24,11 @@ if x == 0:
     elif whichDay == '8':
         projects_till_day_8.project_day_8()
     elif whichDay == '18':
-        day_18.color_generator()
+        choice = input('Which one: Colors | Spirograph: ')
+        if choice.lower() == 'colors':
+            day_18.color_generator()
+        elif choice.lower() == 'spirograph':
+            day_18.spirograph()
     else:
         print('Project day does\'t Exist!')
     x += 1
@@ -39,7 +43,11 @@ if x == 0:
             elif whichDay == '8':
                 projects_till_day_8.project_day_8()
             elif whichDay == '18':
-                day_18.color_generator()
+                choice = input('Which one: Colors | Spirograph')
+                if choice.lower() == 'colors':
+                    day_18.color_generator()
+                elif choice.lower() == 'spirograph':
+                    day_18.spirograph()
         else:
             exit()
 # print('Welcome to Tip Calculator!')

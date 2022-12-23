@@ -12,6 +12,7 @@ def color_generator():
     width = Screen().canvwidth
     height = Screen().canvheight
     turtle.colormode(255)
+
     t.speed(0)
     t.penup()
     t.goto(-width, -height)
@@ -37,4 +38,16 @@ def color_generator():
     exitonclick()
 
 
+def spirograph():
+    s = Turtle()
+    turtle.colormode(255)
+    s.speed(0)
+    x = 0
+    for x in range(0, 560, x + 10):
+        s.color((random.randint(0, 255),
+                 random.randint(0, 255),
+                 random.randint(0, 255)))
+        s.circle(80)
+        s.setheading(x)
 
+    exitonclick()
