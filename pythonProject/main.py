@@ -1,3 +1,4 @@
+import day_18
 from upto_day_4 import UptoDay4
 from upto_day_8 import UptoDay8
 
@@ -6,7 +7,7 @@ projects_till_day_8 = UptoDay8()
 
 x = 0
 if x == 0:
-    whichDay = input('Till which day project would like to run ? Type 4, 8:  ')
+    whichDay = input('Till which day project would like to run ? Type 4, 8, 18:  ')
     if whichDay == '4':
         if x == 0:
             projects_till_day_4.projects()
@@ -22,6 +23,8 @@ if x == 0:
                 exit()
     elif whichDay == '8':
         projects_till_day_8.project_day_8()
+    elif whichDay == '18':
+        day_18.color_generator()
     else:
         print('Project day does\'t Exist!')
     x += 1
@@ -30,11 +33,13 @@ if x == 0:
         answer = input('Do u want to run again! y or n : ')
 
         if x > 0 and answer == 'y':
-            whichDay = input('Till which day project would like to run ? Type 4, 8:  ')
+            whichDay = input('Till which day project would like to run ? Type 4, 8, 18:  ')
             if whichDay == '4':
                 projects_till_day_4.projects()
             elif whichDay == '8':
                 projects_till_day_8.project_day_8()
+            elif whichDay == '18':
+                day_18.color_generator()
         else:
             exit()
 # print('Welcome to Tip Calculator!')
