@@ -1,3 +1,6 @@
+
+
+
 def prime_checker():
     length = 0
     for x in range(1, 101):
@@ -10,6 +13,11 @@ def prime_checker():
         elif length <= 2:
             print(f'{x} Prime')
             length = 0
+
+
+PI = 3.14
+
+
 
 
 def calculation(first, second, operation):
