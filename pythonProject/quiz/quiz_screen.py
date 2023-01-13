@@ -1,6 +1,6 @@
-import quiz_brain
+from quiz.quiz_brain import results
 
-question = quiz_brain.results
+question = results
 
 question_number = len(question)
 index = 0

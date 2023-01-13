@@ -1,4 +1,4 @@
-from question_model import QuestionModel
+from quiz.question_model import QuestionModel
 
 results = [
     QuestionModel(question="American rapper Dr. Dre actually has a Ph.D. doctorate.", answer="False", ),

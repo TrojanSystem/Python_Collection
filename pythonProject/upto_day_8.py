@@ -2,7 +2,7 @@ import random
 
 import day_8
 import hangman
-import quiz_screen
+from quiz import quiz_screen
 
 
 class UptoDay8:
